@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.label {
+  color: var(--neutral-dark-grayish-cyan-dark);
+  font-weight: 700;
+  display: block;
+}
+
+.error {
+  color: var(--primary-crimson);
+  font-weight: 500;
+}

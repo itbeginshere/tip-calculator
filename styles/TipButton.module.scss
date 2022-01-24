@@ -1,0 +1,9 @@
+@import "mixins.scss";
+
+.button {
+  @include tip-button();
+}
+
+.highlighted {
+  background-color: var(--primary-strong-cyan);
+}

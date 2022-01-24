@@ -1,0 +1,47 @@
+@mixin tip-button($custom: false) {
+  height: var(--form-input-height);
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--neutral-very-dark-cyan);
+  color: var(--neutral-white);
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--neutral-very-dark-cyan);
+    background-color: var(--neutral-light-grayish-cyan-dark);
+  }
+
+  @if ($custom == true) {
+    background-color: var(--neutral-light-grayish-cyan-light);
+    color: var(--neutral-very-dark-cyan);
+
+    &:hover {
+      color: var(--neutral-white);
+      background-color: var(--neutral-light-grayish-cyan-dark);
+    }
+  }
+}
+
+@mixin input() {
+  width: 100%;
+  height: var(--form-input-height);
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--neutral-light-grayish-cyan-light);
+  color: var(--neutral-very-dark-cyan);
+  border-radius: 5px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--neutral-light-grayish-cyan-dark);
+  }
+}

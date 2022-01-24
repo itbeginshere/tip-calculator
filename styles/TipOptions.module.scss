@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+}
+
+@media only screen and (max-width: 860px) {
+  .buttonContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

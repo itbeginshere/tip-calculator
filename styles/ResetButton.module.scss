@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  height: var(--form-input-height);
+  background-color: var(--neutral-dark-grayish-cyan-light);
+  color: var(--neutral-dark-grayish-cyan-dark);
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--neutral-light-grayish-cyan-dark);
+    color: var(--neutral-very-dark-cyan);
+  }
+}

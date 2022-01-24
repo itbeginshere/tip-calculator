@@ -1,0 +1,16 @@
+@import "mixins";
+
+.input {
+  @include input;
+}
+
+.error {
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+    border: 1px solid var(--primary-crimson);
+    border-radius: 5px;
+  }
+}
